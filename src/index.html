@@ -18,10 +18,18 @@
     />
   </head>
   <body class="bg-success">
-    <div class="container w-25 h-50 rounded bg-white text-dark">
+    <div class="container rounded bg-white text-dark" id="carta">
       <div class="pinta"><span id="pinta"></span></div>
-      <div class="carta"><span id="carta"></span></div>
+      <div class="numerocarta"><span id="numerocarta"></span></div>
       <div class="pinta2"><span id="pinta2"></span></div>
+    </div>
+    <div>
+      <button onclick="cartaAleatoria()">Generar Carta Aleatoria</button>
+    </div>
+    <div>
+      <input type="number" id="alto" />
+      <input type="number" id="ancho" />
+      <button onclick="cambiarTamano()">Cambiar Tamaño</button>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
